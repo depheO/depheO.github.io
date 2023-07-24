@@ -1,0 +1,44 @@
+body {
+    background-color: #1d1d1d;
+    font-family: "Fira Code", monospace;
+    color: #dadada;
+}
+
+.mainContainer {
+    font-size: 1vw;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: aqua;
+    padding: 10px;
+    margin-left: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+    /*grid-template-areas:
+            "grid-image" "grid-item" "grid-item"
+            "grid-item" "grid-item" "grid-item"
+            "grid-item" "grid-item" "grid-item"*/;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-image {
+    /*grid-area: grid-image;*/
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5%;
+}
+
+.grid-image>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
