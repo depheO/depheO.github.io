@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-a:hover .project-container{
+.project-container:hover{
     transform: scale(1.02);
     outline: 2px solid #aa11da;
     outline-offset: 2px;
@@ -17,7 +17,7 @@ a:hover .project-container{
 
 .baseContainer {
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
-    width: 75%;
+    width:75%;
     margin: 35px auto 0;
     padding: 10px;
 }
@@ -25,14 +25,18 @@ a:hover .project-container{
 .sectionHeader{
 
 }
+.row {
+    padding:20px;
+}
 
 .project-container {
-    width: 95%;
-    height: 95%;
+    height: 100%;
     border-radius: 10px;
     transition-duration: 0.2s;
     transition-property: transform;
-    margin: 15px;
+    padding : 15px 5px 5px;
+    justify-content: center;
+    align-items: center;
 }
 .project-image {
     width: 90%;
@@ -40,13 +44,16 @@ a:hover .project-container{
     box-shadow:0 0 5px 5px rgba(0,0,0,0.15);
     object-fit: contain;
     border-radius: 10px;
-    margin: 20px
 }
 
 .project-description {
-    width:90%;
-    margin: 15px;
-    text-justify: auto;
+    padding: 20px;
+    text-justify: inter-word;
+    align-self: auto;
+}
+
+.carousel-holder{
+
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -56,6 +63,14 @@ a:hover .project-container{
 
 .carousel-indicators {
     margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.carousel-inner{
+    padding-bottom: 20px;
+}
+
+.carousel-item-active {
 }
 
 /*Color palette*/
