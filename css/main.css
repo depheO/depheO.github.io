@@ -38,6 +38,11 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.row > .col-md-6 > a {
+    display: block;
+    height: 100%;
+}
 .project-image {
     width: 90%;
     aspect-ratio: 16/9;
@@ -70,6 +75,12 @@ a {
     padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .carousel-inner {
+        min-height: 35em;
+    }
+}
+
 .carousel-item-active {
 }
 
@@ -88,6 +99,15 @@ a {
 
 .lightText{
     color: #aa11da
+}
+
+@media (max-width: 767px) {
+    .baseContainer {
+        width: 95%;
+    }
+    .row {
+        padding: 10px;
+    }
 }
 
 
