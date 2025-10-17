@@ -22,11 +22,8 @@ a {
     padding: 10px;
 }
 
-.sectionHeader{
-
-}
 .row {
-    padding:20px;
+    margin: 20px;
 }
 
 .project-container {
@@ -37,6 +34,9 @@ a {
     padding : 15px 5px 5px;
     justify-content: center;
     align-items: center;
+}
+.project-column-container {
+    padding-bottom: 1.5rem !important;
 }
 
 .row > .col-md-6 > a {
@@ -53,12 +53,12 @@ a {
 
 .project-description {
     padding: 20px;
-    text-justify: inter-word;
-    align-self: auto;
 }
 
-.carousel-holder{
-
+.project-description-text {
+    text-justify: inter-word;
+    align-self: auto;
+    white-space: normal;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -74,13 +74,6 @@ a {
 .carousel-inner{
     padding-bottom: 20px;
 }
-
-@media (min-width: 768px) {
-    .carousel-inner {
-        min-height: 35em;
-    }
-}
-
 .carousel-item-active {
 }
 
@@ -101,6 +94,13 @@ a {
     color: #aa11da
 }
 
+
+/*@media (min-width: 768px) {
+    .carousel-inner {
+        min-height: 35em;
+    }
+}
+
 @media (max-width: 767px) {
     .baseContainer {
         width: 95%;
@@ -108,6 +108,6 @@ a {
     .row {
         padding: 10px;
     }
-}
+}*/
 
 
