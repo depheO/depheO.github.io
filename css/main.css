@@ -61,16 +61,30 @@ a {
     white-space: normal;
 }
 
-.scaffold-layout-container-grid {
+.stargaze-layout-container {
+    position: relative;
+    display: block;
+}
+
+.stargaze-layout-container::before {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.itch.zone/aW1nLzExMDU4MjM0LmpwZw==/original/a3Glby.jpg");
+    background-size: cover;
+    filter: blur(5px) brightness(50%);
+    z-index: -1;
+}
+
+.scaffold-layout-container-grid {
     width: 100%;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
     align-items: stretch;
-    top: 0%;
-    left: 0;
-    /*background-image: url("https://img.itch.zone/aW1nLzExMDU4MjM0LmpwZw==/original/a3Glby.jpg");*/
 }
 
 .scaffold-layout-container-background {
@@ -102,10 +116,12 @@ a {
 .scaffold-layout-container-title {
     text-align: left;
     font-weight: bold;
+    overflow-wrap: break-word;
 }
 
 .scaffold-layout-container-text {
     text-align: left;
+    overflow-wrap: break-word;
 }
 
 .scaffold-layout-container-list {
@@ -152,19 +168,16 @@ hr.rounded {
     color: #aa11da
 }
 
-/*@media (min-width: 768px) {
-    .carousel-inner {
-        min-height: 35em;
-    }
+/* Small Screens */
+@media (max-width: 500px) {
+
 }
 
-@media (max-width: 767px) {
-    .baseContainer {
-        width: 95%;
+/* Medium Screens*/
+@media (max-width: 800px) {
+    .scaffold-layout-container-grid {
+        flex-direction: column;
     }
-    .row {
-        padding: 10px;
-    }
-}*/
+}
 
 
