@@ -9,12 +9,6 @@ a {
     text-decoration: none;
 }
 
-.project-container:hover{
-    transform: scale(1.02);
-    outline: 2px solid #aa11da;
-    outline-offset: 2px;
-}
-
 .baseContainer {
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
     width:75%;
@@ -24,6 +18,12 @@ a {
 
 .row {
     margin: 20px;
+}
+
+.project-container:hover{
+    transform: scale(1.02);
+    outline: 2px solid #aa11da;
+    outline-offset: 2px;
 }
 
 .project-container {
@@ -61,21 +61,79 @@ a {
     white-space: normal;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    align-items: end;
-    top: 90%;
+.scaffold-layout-container-grid {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: stretch;
+    top: 0%;
+    left: 0;
+    /*background-image: url("https://img.itch.zone/aW1nLzExMDU4MjM0LmpwZw==/original/a3Glby.jpg");*/
 }
 
-.carousel-indicators {
-    margin-bottom: 0;
-    margin-top: 15px;
+.scaffold-layout-container-background {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px) brightness(0.5);
 }
 
-.carousel-inner{
-    padding-bottom: 20px;
+.scaffold-layout-container-left {
+    text-align: left;
+    flex-grow: 2;
+    flex-basis: 70%;
+    /*padding: 5rem 5rem 0px ;*/
+    margin: 5rem 5rem;
+    min-width: 0;
 }
-.carousel-item-active {
+
+.scaffold-layout-container-right {
+    text-align: left;
+    flex-grow: 1;
+    flex-basis: 30%;
+    /*padding: 5rem 5rem 0px ;*/
+    margin: 5rem 5rem;
+    min-width: 0;
 }
+
+.scaffold-layout-container-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.scaffold-layout-container-text {
+    text-align: left;
+}
+
+.scaffold-layout-container-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.scaffold-layout-container-list li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.section {
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.section-title{
+    font-weight: bold;
+}
+
+hr.rounded {
+    border-top: 3px solid #bbb;
+    border-radius: 5px;
+    margin: 2% 2%;
+}
+
 
 /*Color palette*/
 .highlight {
@@ -93,7 +151,6 @@ a {
 .lightText{
     color: #aa11da
 }
-
 
 /*@media (min-width: 768px) {
     .carousel-inner {
