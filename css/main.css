@@ -144,6 +144,24 @@ a {
     font-weight: bold;
 }
 
+.section-mechanic-container{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.section-mechanic-description-container {
+    text-align: left;
+    flex-basis: 50%;
+}
+
+.section-mechanic-description-video-container {
+    text-align: left;
+    flex-basis: 50%;
+}
+
 hr.rounded {
     border-top: 3px solid #bbb;
     border-radius: 5px;
@@ -175,7 +193,7 @@ hr.rounded {
 
 /* Medium Screens*/
 @media (max-width: 800px) {
-    .scaffold-layout-container-grid {
+    .scaffold-layout-container-grid .section-mechanic-container {
         flex-direction: column;
     }
 }
