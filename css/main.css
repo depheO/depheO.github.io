@@ -265,7 +265,7 @@ hr.rounded {
 
 /* Medium Screens*/
 @media screen and (max-width: 800px) {
-    .scaffold-layout-container-grid, .section-mechanic-container {
+    .scaffold-layout-container-grid, .section-container {
         flex-direction: column;
     }
 }
