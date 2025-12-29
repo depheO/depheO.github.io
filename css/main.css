@@ -220,6 +220,7 @@ a {
     text-align: left;
     font-weight: bold;
     overflow-wrap: break-word;
+    color: #aa11da;
 }
 
 .scaffold-layout-container-text {
@@ -245,6 +246,7 @@ a {
 
 .section-title{
     font-weight: bold;
+    color: #aa11da;
 }
 
 .section-container{

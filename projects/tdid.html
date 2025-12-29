@@ -17,6 +17,30 @@
 </head>
 
 <body>
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-md sticky-top midtone-low navbar-dark">
+    <a class="navbar-brand" style="font-weight: bolder; color: darkviolet; padding-left: 5rem;" href="../index.html"> Diogo Figueiredo</a>
+    <button aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-bs-target="#navbarToggle" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end me-4" id="navbarToggle">
+        <ul class="navbar-nav">
+            <li class="nav-item me-2">
+                <a class="nav-link active navbar-link" aria-current="page" href="#top"> Overview </a>
+            </li>
+            <li class="nav-item me-2">
+                <a class="nav-link active navbar-link" aria-current="page" href="#mechanics"> Mechanics </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active navbar-link" aria-current="page" href="#shaders"> Shaders / VFX </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
 <div class="tdid-layout-container">
     <div class="scaffold-layout-container-grid">
         <div class="scaffold-layout-container-left">
@@ -40,7 +64,7 @@
         <p class="scaffold-layout-container-text"> Technical and VFX Artist </p>
     </div>
 </div>
-<hr class="rounded highlight">
+<hr class="rounded highlight" id="mechanics">
 <div class="section">
     <h1 class="section-title"> Gameplay Mechanics </h1>
     <div>
@@ -56,7 +80,7 @@
     </div>
 
 </div>
-<hr class="rounded highlight">
+<hr class="rounded highlight" id="shaders">
 <div class="section">
     <h1 class="section-title"> Shaders and VFX</h1>
     <div>
