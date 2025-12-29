@@ -18,13 +18,18 @@ a {
     justify-content: end;
 }
 
+.navbar-brand-name {
+    font-weight: bolder;
+    color: #ffcda9 !important;
+}
+
 .navbar-link {
     transition-duration: 0s;
     transition-property: background-color;
 }
 
 .navbar-link:hover {
-    color: #aa11da !important;
+    color: #ffcda9 !important;
 }
 
 .baseContainer {
@@ -38,7 +43,7 @@ a {
     padding-bottom: 1.5rem !important;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #aa11da;
+    color: #ffcda9;
 }
 
 .row {
@@ -89,7 +94,7 @@ a {
 .project-description-title {
     font-weight: bold;
     text-transform: uppercase;
-    color: #aa11da;
+    color: #ffcda9;
 }
 
 .stargaze-layout-container {
@@ -220,7 +225,7 @@ a {
     text-align: left;
     font-weight: bold;
     overflow-wrap: break-word;
-    color: #aa11da;
+    color: #ffcda9;
 }
 
 .scaffold-layout-container-text {
@@ -246,7 +251,7 @@ a {
 
 .section-title{
     font-weight: bold;
-    color: #aa11da;
+    color: #ffcda9;
 }
 
 .section-container{
