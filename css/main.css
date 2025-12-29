@@ -1,23 +1,48 @@
 body {
     background-color: #25093d;
     font-family: "Fira Code", monospace;
-    color: #dadada;
+    color: #c8c8c8;
     text-align: center;
+    font-size: 14pt;
 }
 
 a {
     text-decoration: none;
+    color: #c8c8c8;
+}
+
+.navbar > .container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: stretch;
+    justify-content: end;
+}
+
+.navbar-link {
+    transition-duration: 0s;
+    transition-property: background-color;
+}
+
+.navbar-link:hover {
+    color: #aa11da !important;
 }
 
 .baseContainer {
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
     width:75%;
     margin: 35px auto 0;
-    padding: 10px;
+    padding: 60px 10px;
+}
+
+.baseContainer h1 {
+    padding-bottom: 1.5rem !important;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #aa11da;
 }
 
 .row {
-    margin: 20px;
+    margin: 0px 20px;
 }
 
 .project-container:hover{
@@ -59,6 +84,12 @@ a {
     text-justify: inter-word;
     align-self: auto;
     white-space: normal;
+}
+
+.project-description-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #aa11da;
 }
 
 .stargaze-layout-container {

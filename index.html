@@ -11,15 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
-    <title> Diogo Figueiredo - GameDev </title>
+    <title> Diogo Figueiredo - Portfolio </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-sm sticky-top midtone-low navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" style="font-weight: bolder; color: darkviolet" href="index.html"> Diogo Figueiredo</a>
+        <button aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarToggle" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a class="nav-link active navbar-link" aria-current="page" href="#about"> About </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link active navbar-link" aria-current="page" href="#portfolio"> Portfolio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active navbar-link" aria-current="page" href="#contact"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <!-- About Me -->
-<div class="baseContainer">
+<div class="baseContainer" id="about">
     <h1> About Me (Website under construction)</h1>
     <p>
         Hi :) I'm Diogo Figueiredo.
@@ -29,8 +53,8 @@
     </p>
 </div>
 <!-- Portfolio -->
-<div class="baseContainer">
-    <p class="h1">Portfolio</p>
+<div class="baseContainer" id="portfolio">
+    <h1>Portfolio</h1>
     <p>
         Showcase of every project I've worked as a gameplay programmer mainly focusing on player interaction and puzzle
         mechanics
@@ -48,8 +72,8 @@
                         <img class="project-image"
                              src="https://img.itch.zone/aW1nLzExMDU4MjM0LmpwZw==/original/a3Glby.jpg"
                              alt="Stargaze">
-                        <div class="lightText project-description">
-                            <p class="project-description-text">Stargaze</p>
+                        <div class="project-description">
+                            <p class="project-description-title">Stargaze</p>
                             <p class="project-description-text">Stargaze is a two player Co-op puzzle game, where the
                                 two players have to
                                 work together to escape a stranded ship in space and return home</p>
@@ -63,8 +87,8 @@
                         <img class="project-image"
                              src="https://img.itch.zone/aW1nLzExMzE0NTA2LnBuZw==/315x250%23c/Y3ac63.png"
                              alt="Mind Of Desert">
-                        <div class="lightText project-description">
-                            <p class="project-description-text">The Mind of Desert</p>
+                        <div class="project-description">
+                            <p class="project-description-title">The Mind of Desert</p>
                             <p class="project-description-text">The Mind of Desert is a local co-op platform/puzzle
                                 game, where the players
                                 have to play on the same controller, controlling 2 different characters,
@@ -77,8 +101,8 @@
                 <a href="./projects/evorale.html">
                     <div class="project-container midtone-high">
                         <img class="project-image" src="images/Evorale.png" alt="Evorale">
-                        <div class="lightText project-description ">
-                            <p class="project-description-text">Evorale</p>
+                        <div class="project-description ">
+                            <p class="project-description-title">Evorale</p>
                             <p class="project-description-text">Evorale is a Singleplayer fantasy adventure game where
                                 the player has to
                                 restore Order by collecting the four lost elements
@@ -93,8 +117,8 @@
                         <img class="project-image"
                              src="images/TDID.png"
                              alt="The Day I Died">
-                        <div class="lightText project-description">
-                            <p class="project-description-text">The Day I Died</p>
+                        <div class="project-description">
+                            <p class="project-description-title">The Day I Died</p>
                             <p class="project-description-text">The Day I Died is a mystery game, where the player has
                                 to find out the killer
                                 of their own murder.</p>
@@ -108,8 +132,8 @@
                         <img class="project-image"
                              src="images/OxHunt.jpg"
                              alt="The Ox Hunt">
-                        <div class="lightText project-description">
-                            <p class="project-description-text">The Ox Hunt</p>
+                        <div class="project-description">
+                            <p class="project-description-title">The Ox Hunt</p>
                             <p class="project-description-text"> The Ox Hunt is a Puzzle/Action game, where the player
                                 needs to find all
                                 statues of the chinese zodiac to restore the flow of time</p>
@@ -117,14 +141,22 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div class="project-container midtone-high m-4">
-
+            <div class="col-sm-12 project-column-container">
+                <a href="./projects/others.html">
+                    <div class="project-container midtone-high">
+                        <div class="project-description">
+                            <p class="project-description-title">Other Projects</p>
+                            <p class="project-description-text"> Showcase of some minor projects, that I've worked on,
+                                that contributted to my journey as a game/software developer</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
-        <!--- Contacts --->
-<div class="baseContainer mb-4">
+<!--- Contacts --->
+<div class="baseContainer mb-4" id="contact">
     <div>
         <h1>Contact Me</h1>
         <p><b>Discord:</b> dephee</p>
